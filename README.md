@@ -5,8 +5,8 @@ difference can be enforced as a system-wide state-transition invariant.**
 
 Stefan Ragland, Dominion Labs Research & Development. Published 5 August 2025.
 
-- Paper: <https://dmnlabs.org/research/systemic-epistemic-governance/>
-- Paper (offline copy): [`paper/systemic-epistemic-governance.html`](paper/systemic-epistemic-governance.html)
+- Paper (PDF): [`paper/systemic-epistemic-governance.pdf`](paper/systemic-epistemic-governance.pdf)
+- Paper (web): <https://dmnlabs.org/research/systemic-epistemic-governance/>
 - Contact: research@dmnlabs.org
 
 ## The argument
