@@ -140,6 +140,17 @@
 .skip-link:focus { transform:translate(-50%,0); }
 @media (prefers-reduced-motion: reduce) { .skip-link { transition:none; } }
 @media print{ .skip-link{display:none!important} }
+
+@media print{
+  figure, .tbl, table, blockquote, pre { page-break-inside: avoid; break-inside: avoid; }
+  figure { margin: 1rem 0; }
+  section { margin-top: 1.2rem; }
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+  figcaption, .tbl caption { page-break-before: avoid; break-before: avoid; margin-top: .45em; }
+  p, li { orphans: 2; widows: 2; }
+  #refs { page-break-before: always; break-before: page; }
+  .skip-link { display: none !important; }
+}
 </style>
 
     <!-- SEO: canonical, social card, academic citation, structured data -->
