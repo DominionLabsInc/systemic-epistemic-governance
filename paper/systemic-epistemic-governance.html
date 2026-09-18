@@ -142,13 +142,31 @@
 @media print{ .skip-link{display:none!important} }
 
 @media print{
-  figure, .tbl, table, blockquote, pre { page-break-inside: avoid; break-inside: avoid; }
-  figure { margin: 1rem 0; }
-  section { margin-top: 1.2rem; }
-  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
-  figcaption, .tbl caption { page-break-before: avoid; break-before: avoid; margin-top: .45em; }
+  /* This paper carries its own stylesheet, so it repeats the print settings the
+     other papers take from css/paper.css: closer leading and paragraph spacing,
+     tighter tables and headings, figures and tables kept whole, and references
+     and appendices starting their own page. */
+  body { line-height: 1.58; }
+  p { margin: 0.6rem 0; }
   p, li { orphans: 2; widows: 2; }
-  #refs { page-break-before: always; break-before: page; }
+
+  h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+  h2 { margin: 1rem 0 0.35rem; }
+  h3 { margin: 0.85rem 0 0.3rem; }
+  section { margin-top: 0.9rem; }
+
+  figure, .tbl, table, blockquote, pre { page-break-inside: avoid; break-inside: avoid; }
+  figure { margin: 0.85rem 0; }
+  figcaption, .tbl caption { page-break-before: avoid; break-before: avoid; margin-top: .45em; }
+
+  .tbl, .data-wrap { margin: 0.7rem auto; }
+  th, td { padding: 0.22rem 0.8rem; }
+  table caption { margin-top: 0.4rem; }
+
+  ol.refs li { margin: 0.34rem 0; }
+  .foot, .footer-note { margin-top: 1.2rem; page-break-before: avoid; break-before: avoid; }
+
+  #refs, #appa { page-break-before: always; break-before: page; }
   .skip-link { display: none !important; }
 }
 </style>
